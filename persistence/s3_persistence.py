@@ -3,7 +3,7 @@ import json
 import boto3
 from botocore.exceptions import ClientError
 
-BUCKET_NAME = os.getenv("AWS_S3_BUCKET")  # e.g. scamurai-bot-data
+BUCKET_NAME = os.getenv("S3_BUCKET_NAME")  # e.g. scamurai-bot-data
 KEY = "posted_claim_ids.json"
 
 s3 = boto3.client("s3")
