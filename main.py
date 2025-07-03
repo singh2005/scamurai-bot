@@ -8,7 +8,7 @@ from persistence import s3_client
 from persistence.s3_persistence import load_posted_claim_ids, save_posted_claim_ids
 
 print("🔧 Fetching scam alerts from FTC...")
-claims = ftc.get_latest_claims(limit=1)
+claims = ftc.get_latest_claims(limit=20)
 
 print(f"📦 Received {len(claims)} scam alerts")
 
