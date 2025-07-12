@@ -15,8 +15,11 @@ posted_ids = load_posted_claim_ids()
 # 🔧 Fetching scam alerts from FTC
 # ==============================
 print("🔧 Fetching scam alerts from FTC...")
-claims = ftc.get_latest_claims(limit=1)
-print(f"📦 Received {len(claims)} scam alerts from FTC")
+claims = ftc.get_latest_claims(limit=20)
+
+print(f"📦 Received {len(claims)} scam alerts")
+
+posted_ids = load_posted_claim_ids()
 
 for claim in claims:
     if claim.url in posted_ids:
