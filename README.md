@@ -1,6 +1,6 @@
 # 🛡️ Scamurai-bot
 
-Scamurai-bot is a **consumer protection assistant bot** that fetches the latest scam alerts from trusted sources (currently FTC) and summarizes them into **clear, concise Mastodon posts** to help people stay informed and avoid scams.
+Scamurai-bot is a **consumer protection assistant bot** that fetches the latest scam alerts from trusted sources (currently FTC and IC3) and summarizes them into **clear, concise Mastodon posts** to help people stay informed and avoid scams.
 
 ## 💡 What does it do?
 
