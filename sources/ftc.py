@@ -50,13 +50,3 @@ def get_latest_claims(limit=5):
         claims.append(claim)
 
     return claims
-
-if __name__ == "__main__":
-    claims = get_latest_claims(limit=3)
-    for c in claims:
-        print(f"🔍 {c.title}")
-        print(f"✅ Verdict: {c.verdict}")
-        print(f"📝 Summary: {c.summary}")
-        print(f"🔗 URL: {c.url}")
-        print(f"📅 Date: {c.date}")
-        print("-" * 80)
